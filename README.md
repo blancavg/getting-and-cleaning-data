@@ -16,7 +16,8 @@ The script does the following:
 ### Usage
 In order to execute the script you have to download the files to a local source and setup the path
 
-``` setwd("path") 
+``` 
+setwd("path") 
 ```
 
 
