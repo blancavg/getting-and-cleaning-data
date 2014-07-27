@@ -15,10 +15,8 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 - Its activity label. 
 - An identifier of the subject who carried out the experiment.
 
-Feature Selection
-From the original features_info
-Feature Selection 
-=================
+
+###Feature Selection ###
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
@@ -26,7 +24,7 @@ Subsequently, the body linear acceleration and angular velocity were derived in 
 
 Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
 
-These signals were used to estimate variables of the feature vector for each pattern:
+These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
 tBodyAcc-XYZ
@@ -86,3 +84,95 @@ Transformation derived from the original data source
  * The script used descriptive activity names to name the activities in the data set
  * The script appropriately labeled the data set with descriptive variable names. 
  * The script created a second, independent tidy data set with the average of each variable for each activity and each subject.  
+
+The new data set has 180 rows corresponding to 30 users associated with 6 activities and the following 86 variables (average of each variable for each activity and each subject).
+
+### Variables###
+Activity
+Subject
+Time.BodyAccel.Mean.X
+Time.BodyAccel.Mean.Y
+Time.BodyAccel.Mean.Z
+Time.BodyAccel.Std.X
+Time.BodyAccel.Std.Y
+Time.BodyAccel.Std.Z
+Time.GravityAccel.Mean.X
+Time.GravityAccel.Mean.Y
+Time.GravityAccel.Mean.Z
+Time.GravityAccel.Std.X
+Time.GravityAccel.Std.Y
+Time.GravityAccel.Std.Z
+Time.BodyAccelJerk.Mean.X
+Time.BodyAccelJerk.Mean.Y
+Time.BodyAccelJerk.Mean.Z
+Time.BodyAccelJerk.Std.X
+Time.BodyAccelJerk.Std.Y
+Time.BodyAccelJerk.Std.Z
+Time.BodyGyro.Mean.X
+Time.BodyGyro.Mean.Y
+Time.BodyGyro.Mean.Z
+Time.BodyGyro.Std.X
+Time.BodyGyro.Std.Y
+Time.BodyGyro.Std.Z
+Time.BodyGyroJerk.Mean.X
+Time.BodyGyroJerk.Mean.Y
+Time.BodyGyroJerk.Mean.Z
+Time.BodyGyroJerk.Std.X
+Time.BodyGyroJerk.Std.Y
+Time.BodyGyroJerk.Std.Z
+Time.BodyAccelMagnitude.Mean
+Time.BodyAccelMagnitude.Std
+Time.GravityAccelMagnitude.Mean
+Time.GravityAccelMagnitude.Std
+Time.BodyAccelJerkMagnitude.Mean
+Time.BodyAccelJerkMagnitude.Std
+Time.BodyGyroMagnitude.Mean
+Time.BodyGyroMagnitude.Std
+Time.BodyGyroJerkMagnitude.Mean
+Time.BodyGyroJerkMagnitude.Std
+Frequency.BodyAccel.Mean.X
+Frequency.BodyAccel.Mean.Y
+Frequency.BodyAccel.Mean.Z
+Frequency.BodyAccel.Std.X
+Frequency.BodyAccel.Std.Y
+Frequency.BodyAccel.Std.Z
+Frequency.BodyAccel.Mean.Frequency.X
+Frequency.BodyAccel.Mean.Frequency.Y
+Frequency.BodyAccel.Mean.Frequency.Z
+Frequency.BodyAccelJerk.Mean.X
+Frequency.BodyAccelJerk.Mean.Y
+Frequency.BodyAccelJerk.Mean.Z
+Frequency.BodyAccelJerk.Std.X
+Frequency.BodyAccelJerk.Std.Y
+Frequency.BodyAccelJerk.Std.Z
+Frequency.BodyAccelJerk.Mean.Frequency.X
+Frequency.BodyAccelJerk.Mean.Frequency.Y
+Frequency.BodyAccelJerk.Mean.Frequency.Z
+Frequency.BodyGyro.Mean.X
+Frequency.BodyGyro.Mean.Y
+Frequency.BodyGyro.Mean.Z
+Frequency.BodyGyro.Std.X
+Frequency.BodyGyro.Std.Y
+Frequency.BodyGyro.Std.Z
+Frequency.BodyGyro.Mean.Frequency.X
+Frequency.BodyGyro.Mean.Frequency.Y
+Frequency.BodyGyro.Mean.Frequency.Z
+Frequency.BodyAccelMagnitude.Mean
+Frequency.BodyAccelMagnitude.Std
+Frequency.BodyAccelMag.Mean.Frequency
+Frequency.BodyBodyAccelJerkMagnitude.Mean
+Frequency.BodyBodyAccelJerkMagnitude.Std
+Frequency.BodyBodyAccelJerkMag.Mean.Frequency
+Frequency.BodyBodyGyroMagnitude.Mean
+Frequency.BodyBodyGyroMagnitude.Std
+Frequency.BodyBodyGyroMag.Mean.Frequency
+Frequency.BodyBodyGyroJerkMagnitude.Mean
+Frequency.BodyBodyGyroJerkMagnitude.Std
+Frequency.BodyBodyGyroJerkMag.Mean.Frequency
+Angle.Time.BodyAccelMean.Gravity
+Angle.Time.BodyAccelJerkMean.GravityMean)
+Angle.Time.BodyGyroMean.GravityMean
+Angle.Time.BodyGyroJerkMean.GravityMean
+Angle.X.GravityMean
+Angle.Y.GravityMean
+Angle.Z.GravityMean
